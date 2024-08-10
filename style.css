@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./Public/Cool_Wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+nav {
+  background-color: rgba(158, 137, 115, 0.473);
+  box-shadow: 3px 3px 5px rgba(201, 148, 148, 0.1);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 35px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav a:hover {
+  background-color: rgba(158, 137, 115, 0.317);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+nav button {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  background-color: rgba(158, 137, 115, 0.473);
+  border: 20px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav button:hover {
+  background-color: rgba(65, 55, 45, 0.457);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+nav button h3 {
+  margin-right: 10px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 170px;
+  z-index: 999;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(65, 55, 45, 0.457);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  border-left: 0;
+  margin-top: 10px;
+}
+
+.sidebar button {
+  background-color: rgba(65, 55, 45, 0);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar button h3 {
+  border-right: 10px;
+}
+
+.sidebar button:hover {
+  cursor: pointer;
+  background-color: rgba(150, 130, 109, 0.938);
+  font-size: 15px;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.menuButton {
+  display: none;
+}
+
+.menuButton:hover {
+  background-color: rgba(158, 137, 115, 0.317);
+}
+
+.miniSideBar {
+  display: none;
+}
+
+.show {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .miniSideBar {
+    display: flex;
+  }
+  .menuButton {
+    display: none;
+  }
+  .firstDisplay {
+    display: none;
+  }
+  .show {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .hideOnMobile {
+    width: 100%;
+  }
+  .miniSideBar {
+    display: none;
+  }
+  .sidebar {
+    display: flex;
+  }
+  .menuButton {
+    display: flex;
+  }
+  .show{
+    display: flex;
+  }
+}

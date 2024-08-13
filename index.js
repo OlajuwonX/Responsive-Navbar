@@ -13,10 +13,10 @@ function generateRandomInt(max) {
 }
 
 const images = [
-  './public/Cool_wallpaper1.jpg',
-  './public/Cool_wallpaper2.jpg',
-  './public/Cool_wallpaper3.jpg',
-  './public/Cool_wallpaper4.jpg'
+  './public/Cool_Wallpaper1.jpg',
+  './public/Cool_Wallpaper2.jpg',
+  './public/Cool_Wallpaper3.jpg',
+  './public/Cool_Wallpaper4.jpg'
 ];
 
 const randomIndex = generateRandomInt(images.length);

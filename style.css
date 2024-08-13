@@ -134,7 +134,7 @@ nav button h3 {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   .miniSideBar {
     display: flex;
   }
@@ -149,7 +149,7 @@ nav button h3 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 620px) {
   .hideOnMobile {
     width: 100%;
   }

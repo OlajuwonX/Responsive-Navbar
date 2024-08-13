@@ -1,11 +1,15 @@
 function showSideBar() {
   const sidebar = document.querySelector('.sidebar');
+  const hideMenuBtn = document.getElementById('hide');
   sidebar.style.display = 'flex';
+  hideMenuBtn.style.display = 'none';
 }
 
 function hideSideBar() {
   const sidebar = document.querySelector('.sidebar');
+  const hideMenuBtn = document.getElementById('hide');
   sidebar.style.display = 'none';
+  hideMenuBtn.style.display = 'flex';
 }
 
 function generateRandomInt(max) {
